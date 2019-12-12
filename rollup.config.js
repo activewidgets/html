@@ -5,6 +5,10 @@ import postcss from 'rollup-plugin-postcss';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 
 
+let name = 'ActiveWidgets.HTML',
+    framework = [];
+
+
 let globals = {
     'preact': 'preact',
     '@activewidgets/frameworks/html': 'ActiveWidgets.frameworks.html',
@@ -30,8 +34,7 @@ let plugins = [
 ];
 
 
-let name = 'ActiveWidgets.HTML',
-    external = Object.keys(globals),
+let external = Object.keys(globals),
     compact = true,
     sourcemap = true,
     sourcemapPathTransform = s => s.replace('node_modules', '../..');
@@ -44,16 +47,16 @@ let modules = file => [
 
 
 let browser = file => [
-    {format: 'umd', sourcemap, sourcemapPathTransform, name, compact, file: 'dist/' + file + '.js'}
+    {format: 'umd', sourcemap, sourcemapPathTransform, globals, name, compact, file: 'dist/' + file + '.js'}
 ];
 
 
 export default [
-    {input: 'index.js', output: modules('html'), external, plugins},
+    {input: 'index.js', output: modules('package'), external, plugins},
     {input: 'js/index.js', output: modules('js'), external, plugins},
     {input: 'css/index.js', output: modules('css'), external, plugins},
     {input: 'bundle/index.js', output: modules('bundle'), external, plugins},
 
-    {input: 'index.js', output: browser('ax'), plugins},
-    {input: 'bundle/index.js', output: browser('bundle'), plugins}
+    {input: 'index.js', output: browser('ax'), external: framework, plugins},
+    {input: 'bundle/index.js', output: browser('bundle'), external: framework, plugins}
 ];
