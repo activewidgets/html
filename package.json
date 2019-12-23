@@ -21,7 +21,8 @@
   "dependencies": {
     "@activewidgets/datagrid": "https://cdn.activewidgets.com/packages/datagrid-0.0.6.tgz",
     "@activewidgets/frameworks": "https://cdn.activewidgets.com/packages/frameworks-0.0.6.tgz",
-    "preact": "10.1.0"
+    "htm": "2.2.1",
+    "preact": "10.1.1"
   },
   "devDependencies": {
     "@activewidgets/puppeteer": "^0.0.2",
