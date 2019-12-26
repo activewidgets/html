@@ -15,7 +15,7 @@ Object.keys(components).forEach(i => {
 
     let Comp = components[i];
 
-    if (typeof Comp == 'function' && Comp.prototype.mount){
+    if (typeof Comp == 'function' && Comp.prototype && Comp.prototype.mount){
         Comp.tag = 'ax-' + i.toLowerCase();
     }
 });
