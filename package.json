@@ -25,6 +25,7 @@
     "preact": "10.1.1"
   },
   "devDependencies": {
+    "@activewidgets/options": "0.0.6",
     "@activewidgets/puppeteer": "^0.0.3",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
