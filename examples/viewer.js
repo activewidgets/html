@@ -1,5 +1,5 @@
 ﻿
-import * as components from '../';
+import '../';
 import * as pages from './index.js';
 import * as northwind from './northwind.js';
 
@@ -10,15 +10,6 @@ let el = document.querySelector('#app'),
     lookup = {},
     links = [],
     key = 1;
-
-Object.keys(components).forEach(i => {
-
-    let Comp = components[i];
-
-    if (typeof Comp == 'function' && Comp.prototype && Comp.prototype.connectedCallback){
-        Comp.tag = 'ax-' + i.toLowerCase();
-    }
-});
 
 
 function path(s){
@@ -41,13 +32,13 @@ function index(name){
 }
 
 
-function render(Component, props){
+function render(component, props){
 
     el.innerHTML = '';
 
     props.key = ++key;
 
-    let i, node = document.createElement(Component.tag);
+    let i, node = document.createElement(component);
 
     for(i in props){
         node[i] = props[i];
@@ -63,7 +54,7 @@ function refresh(){
         mode = RegExp.$1;
 
     if (name && typeof lookup[name] == 'function') {
-        lookup[name]({render}, components, templates, data);
+        lookup[name]({render}, templates, data);
     }
     else {
         index(name);
