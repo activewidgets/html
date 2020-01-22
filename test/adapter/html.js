@@ -4,7 +4,7 @@ import '@activewidgets/components';
 
 
 
-export function render(component, props){
+export function mount(component, props){
 
     let baseElement = document.body,
         container = baseElement.appendChild(document.createElement('div')),
