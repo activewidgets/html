@@ -1,13 +1,19 @@
 ﻿
 import {Viewer} from '@activewidgets/examples';
-import * as pages from '../index.js';
 import '../../';
+import * as pages from './examples.js';
+import readme from '../README.md';
+import logo from './html.svg';
+import pkg from '../../package.json';
+
+
+let framework = 'HTML (Custom Elements)',
+    container = document.getElementById('app');
 
 
 function mount(component, props = {}){
 
-    let container = document.getElementById('app'),
-        target = document.createElement(component);
+    let target = document.createElement(component);
 
     Object.keys(props).forEach(i => {
         target[i] = props[i];
@@ -19,12 +25,14 @@ function mount(component, props = {}){
 
 
 function clean(){
-    let container = document.getElementById('app');
     container.innerHTML = '';
 }
 
 
+container.innerHTML = '';
+
+
 const viewer = new Viewer({
     target: document.body,
-    props: {pages, mount, clean}
+    props: {framework, pkg, logo, readme, pages, mount, clean}
 });
