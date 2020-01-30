@@ -25,7 +25,7 @@
     "preact": "10.1.1"
   },
   "devDependencies": {
-    "@activewidgets/examples": "0.0.2",
+    "@activewidgets/examples": "0.0.3",
     "@activewidgets/options": "0.0.10",
     "@activewidgets/puppeteer": "0.0.4",
     "@activewidgets/testing": "0.0.3",
