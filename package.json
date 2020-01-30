@@ -21,8 +21,8 @@
   "dependencies": {
     "@activewidgets/datagrid": "0.0.10",
     "@activewidgets/frameworks": "0.0.10",
-    "htm": "2.2.1",
-    "preact": "10.1.1"
+    "htm": "3.0.2",
+    "preact": "10.2.1"
   },
   "devDependencies": {
     "@activewidgets/examples": "0.0.3",
