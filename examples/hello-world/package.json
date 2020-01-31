@@ -9,7 +9,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@activewidgets/html": "0.0.10"
+    "@activewidgets/html": "*"
   },
   "devDependencies": {
     "parcel-bundler": "^1"
