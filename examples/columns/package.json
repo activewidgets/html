@@ -2,7 +2,7 @@
   "name": "html-columns",
   "version": "1.0.0",
   "description": "Columns, rows - ActiveWidgets/HTML",
-  "keywords": [],
+  "license": "MIT",
   "main": "src/index.js",
   "scripts": {
     "start": "parcel index.html --open",
