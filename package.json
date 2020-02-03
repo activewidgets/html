@@ -1,6 +1,6 @@
 {
   "name": "@activewidgets/html",
-  "version": "0.0.11",
+  "version": "3.0.0",
   "description": "Datagrid component (html custom elements)",
   "author": "ActiveWidgets SARL",
   "license": "MIT",
@@ -20,14 +20,14 @@
     "test": "npm run output && jest"
   },
   "dependencies": {
-    "@activewidgets/datagrid": "0.0.11",
-    "@activewidgets/frameworks": "0.0.11",
+    "@activewidgets/datagrid": "3.0.0",
+    "@activewidgets/frameworks": "3.0.0",
     "htm": "3.0.2",
-    "preact": "10.2.1"
+    "preact": "10.3.0"
   },
   "devDependencies": {
     "@activewidgets/examples": "0.0.5",
-    "@activewidgets/options": "0.0.11",
+    "@activewidgets/options": "3.0.0",
     "@activewidgets/puppeteer": "0.0.4",
     "@activewidgets/testing": "0.0.3",
     "@babel/core": "^7",
