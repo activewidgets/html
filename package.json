@@ -69,10 +69,11 @@
     "url": "git+https://github.com/activewidgets/html.git"
   },
   "keywords": [
+    "activewidgets",
     "datagrid"
   ],
   "bugs": {
     "url": "https://github.com/activewidgets/html/issues"
   },
-  "homepage": "https://github.com/activewidgets/html#readme"
+  "homepage": "https://activewidgets.com"
 }
