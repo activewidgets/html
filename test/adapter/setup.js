@@ -6,6 +6,9 @@ if (!window.customElements){
         all: {},
         define: (name, Element) => {
             window.customElements.all[name] = Element;
+        },
+        get: (name) => {
+            return window.customElements.all[name];
         }
     }
 }
