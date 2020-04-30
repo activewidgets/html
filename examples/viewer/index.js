@@ -16,12 +16,23 @@ let framework = 'HTML (Custom Elements)',
     container = document.getElementById('app');
 
 
+function wrap(handler){
+    return function(event){
+        handler(event.detail);
+    };
+}
+
 function mount(component, props = {}){
 
     let target = document.createElement(component);
 
     Object.keys(props).forEach(i => {
-        target[i] = props[i];
+        if (i.indexOf('on') === 0){
+            target.addEventListener(i.slice(2).toLowerCase(), wrap(props[i]), true);
+        }
+        else {
+            target[i] = props[i];
+        }
     });
 
     container.innerHTML = '';
