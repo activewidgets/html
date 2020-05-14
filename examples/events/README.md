@@ -16,5 +16,5 @@ el.addEventListener('mouse', event => onMouse(event.detail), true);
 
 Read more:
 
-- [Get started](https://docs.activewidgets.com/guide/starting/html/#user-events)
+- [HTML Datagrid - Get started](https://docs.activewidgets.com/guide/env/html/#user-events)
 - [API - mouse event](https://docs.activewidgets.com/api/datagrid/mouse-event/)
