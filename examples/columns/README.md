@@ -25,10 +25,10 @@ el.columns = [
 el.rows = northwind.customers;
 ```
 
-Assign an array of column descriptor objects to the [columns](https://docs.activewidgets.com/api/datagrid/columns/) property.
+Assign an array of column descriptor objects to the [columns](https://activewidgets.com/api/datagrid/columns/) property.
 
 Read more:
 
-- [HTML Datagrid - Get started](https://docs.activewidgets.com/guide/env/html/#data-properties)
-- [API - columns](https://docs.activewidgets.com/api/datagrid/columns/)
-- [API - rows](https://docs.activewidgets.com/api/datagrid/rows/)
+- [HTML Datagrid - Get started](https://activewidgets.com/guide/env/html/#data-properties)
+- [API - columns](https://activewidgets.com/api/datagrid/columns/)
+- [API - rows](https://activewidgets.com/api/datagrid/rows/)

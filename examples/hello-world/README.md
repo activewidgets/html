@@ -28,4 +28,4 @@ Thats all!
 
 Read more:
 
- - [HTML Datagrid - Get started](https://docs.activewidgets.com/guide/env/html/)
+ - [HTML Datagrid - Get started](https://activewidgets.com/guide/env/html/)

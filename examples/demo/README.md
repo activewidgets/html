@@ -15,7 +15,7 @@ This is a simple demo showing some of the features of ActiveWidgets datagrid -
 - International number/date formats
 - Custom column types (presets)
 
-[HTML Datagrid - Get started](https://docs.activewidgets.com/guide/env/html/)
+[HTML Datagrid - Get started](https://activewidgets.com/guide/env/html/)
 
 ### Virtualized scrolling
 
@@ -145,5 +145,5 @@ like popups, overlays, gantt charts, schedulers etc.
 
 Read more:
 
-- [HTML Datagrid - Get started](https://docs.activewidgets.com/guide/env/html/)
-- [API](https://docs.activewidgets.com/api/)
+- [HTML Datagrid - Get started](https://activewidgets.com/guide/env/html/)
+- [API](https://activewidgets.com/api/)
