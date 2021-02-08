@@ -10,7 +10,7 @@ export function mount(component, props){
         container = baseElement.appendChild(document.createElement('div')),
         el = container.appendChild(document.createElement(component));
 
-    let Element = window.customElements.all[component];
+    let Element = window.customElements.get(component);
 
     if (!Element){
         throw new Error('Not found - ' + component);
