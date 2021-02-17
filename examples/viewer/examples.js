@@ -17,5 +17,3 @@ export const Local = {
     'User events': {path: 'events', readme: events}
 };
 
-
-export * from '@activewidgets/examples/shared';
