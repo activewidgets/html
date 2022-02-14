@@ -23,10 +23,17 @@ const columns = [
 
 const rows = northwind.customers;
 
+function calc(){
+    return {
+        amount: 2000 * Math.random(),
+        date: Date.now() - 500 * 86400000 * Math.random()
+    };
+}
 
 let el = document.querySelector('ax-datagrid');
 
 el.columns = columns;
 el.rows = rows;
+el.calc = calc;
 el.templates = templates;
 el.options = options;
