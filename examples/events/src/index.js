@@ -9,8 +9,18 @@ import { columns, rows } from "@activewidgets/examples/data";
 import './styles.css';
 
 
-function onMouse({row}){
-    alert(`row ${row.key} clicked!`);
+let gridAPI;
+
+function onInit(event){
+    gridAPI = event.detail;
+}
+
+
+function onClick(event){
+    let cell = gridAPI.cellFromElement(event.target); 
+    if (cell && cell.section === 'main') {
+        alert(`row ${cell.row.index + 1} clicked!`);
+    }
 }
 
 
@@ -19,4 +29,5 @@ const el = document.querySelector('ax-datagrid');
 el.columns = columns;
 el.rows = rows;
 
-el.addEventListener('mouse', event => onMouse(event.detail), true);
+el.addEventListener('init', onInit, true);
+el.addEventListener('click', onClick, true);
