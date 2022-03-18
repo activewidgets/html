@@ -10,11 +10,16 @@
   },
   "dependencies": {
     "@activewidgets/examples": "*",
-    "@activewidgets/html": "*",
-    "@activewidgets/options": "*"
+    "@activewidgets/html": "^3",
+    "@activewidgets/options": "^3"
   },
   "devDependencies": {
     "vite": "^2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/activewidgets/html.git",
+    "directory": "examples/demo"
   },
   "private": true
 }

@@ -1,5 +1,5 @@
 
-[Open fullscreen](/events/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/events) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/html/tree/master/examples/events)
+[Open fullscreen](https://html.activewidgets.com/events/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/events) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/html/tree/master/examples/events?file=src/index.js)
 
 The datagrid emits composite [mouse](https://activewidgets.com/api/datagrid/mouse-event/) event 
 which makes it easier to find the elements affected by the user action -

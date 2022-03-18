@@ -54,7 +54,7 @@ el.rows = [
 ];
 ```
 
-[Live example](https://html.activewidgets.com/examples/local/hello-world/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/hello-world) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/html/tree/master/examples/hello-world)
+[Live example](https://html.activewidgets.com/hello-world/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/hello-world) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/html/tree/master/examples/hello-world?file=src/index.js)
 
 
 ## CDN links
@@ -65,7 +65,7 @@ For quick prototyping the package is also available over ActiveWidgets CDN -
 <script src="https://cdn.activewidgets.com/html"></script>
 ```
 
-[Live example](https://html.activewidgets.com/examples/local/cdn-es5/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/cdn-es5) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/html/tree/master/examples/cdn-es5)
+[Live example](https://html.activewidgets.com/examples/local/cdn-es5/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/cdn-es5) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/html/tree/master/examples/cdn-es5)
 
 
 ## Data properties
@@ -95,7 +95,7 @@ el.columns = [
 el.rows = northwind.customers;
 ```
 
-[Live example](https://html.activewidgets.com/examples/local/columns/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/columns) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/html/tree/master/examples/columns)
+[Live example](https://html.activewidgets.com/columns/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/columns) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/html/tree/master/examples/columns?file=src/index.js)
 
 
 ## User events
@@ -116,7 +116,7 @@ el.rows = rows;
 el.addEventListener('mouse', event => onMouse(event.detail), true);
 ```
 
-[Live example](https://html.activewidgets.com/examples/local/events/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/events) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/html/tree/master/examples/events)
+[Live example](https://html.activewidgets.com/events/) | [Source on github](https://github.com/activewidgets/html/tree/master/examples/events) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/html/tree/master/examples/events?file=src/index.js)
 
 When assigning an event handler, note that the event data is passed in the `event.detail` property (we are using DOM CustomEvent class).  
 

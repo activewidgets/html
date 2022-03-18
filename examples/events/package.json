@@ -10,10 +10,15 @@
   },
   "dependencies": {
     "@activewidgets/examples": "*",
-    "@activewidgets/html": "*"
+    "@activewidgets/html": "^3"
   },
   "devDependencies": {
     "vite": "^2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/activewidgets/html.git",
+    "directory": "examples/events"
   },
   "private": true
 }
