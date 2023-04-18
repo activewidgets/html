@@ -4,10 +4,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import adapter from '@activewidgets/frameworks/html';
+import converter from '@activewidgets/frameworks/html';
 import {Component, cloneElement, createElement, isValidElement, createContext, render} from 'preact';
 import {Suspense, lazy} from 'preact/compat';
 import htm from 'htm';
 
-export const {h, build} = adapter({Component, cloneElement, createElement, isValidElement, createContext, Suspense, lazy, render});
+export const {h, component: WebComponent} = converter({Component, cloneElement, createElement, isValidElement, createContext, Suspense, lazy, render});
 export const tpl = htm.bind(h);
