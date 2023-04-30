@@ -5,7 +5,7 @@
  */
 
 import {WebComponent} from './framework.js';
-import {Datagrid, Row, Cells} from '@activewidgets/datagrid/js';
+import {Datagrid, Row, Cells} from '@activewidgets/datagrid';
 
 WebComponent(Datagrid);
 WebComponent(Row);

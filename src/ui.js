@@ -4,4 +4,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import '@activewidgets/datagrid/dist/datagrid.css';
+import {WebComponent} from './framework.js';
+import {Button as _Button} from '@activewidgets/ui';
+
+export const Button = WebComponent(_Button);
